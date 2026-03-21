@@ -11,7 +11,7 @@ test.skip('file upload', async ({ page }) => {
 
 
 
-test.only('multiplefiles', async ({ page }) => {
+test('multiplefiles', async ({ page }) => {
     await page.goto('https://testautomationpractice.blogspot.com/');
     await page.locator('//button[text()="Upload Multiple Files"]').click();
     await expect( page.locator('[id="multipleFilesStatus"]')).toHaveText('No files selected.'); //tohave text ku ulla  enna expect pandrom oh atha fill pannanum
